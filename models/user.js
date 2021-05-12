@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING,
     createdAt: DataTypes.STRING,
     updatedAt: DataTypes.STRING,
-    deletedAt: DataTypes.STRING
+    deletedAt: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'User',

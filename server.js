@@ -8,6 +8,9 @@ const initAllWebRouters = require('./routes/web')
 
 let app = express()
 
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+
 //confiq view engine
 
 configViewEngine(app)

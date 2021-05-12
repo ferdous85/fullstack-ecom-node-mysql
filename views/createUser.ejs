@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a User</title>
+</head>
+<body>
+    <div>
+        <form action="/create-new-user" method="POST">
+            <input type="text" name="name" id="" placeholder="Name">
+            <br>
+            <input type="email" name="email" id="" placeholder="Emil">
+            <br>
+            <input type="password" name="password" id="" placeholder="password">
+            <br>
+            <select name="roleId" id="">
+                <option value="1" selected>Admin</option>
+                <option value="2">Operator</option>
+                
+            </select>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
