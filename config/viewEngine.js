@@ -1,14 +1,14 @@
 const express = require('express')
-const ejs = require('ejs')
+const expressEjsExtend = require('express-ejs-extend')
 
 //config view engine for node
 
-let configViewEngine = (app) =>{
+let configViewEngine = (app)=> {
+    app.use(express.static("./public"));
+    app.engine("ejs", expressEjsExtend);
+    app.set("view engine", "ejs");
+    app.set("views","./views");
+};
 
-    app.use(express.static("./public"))
-    app.set('view engine', ejs)
-    app.set('views', './views')
-
-}
 
 module.exports = configViewEngine
